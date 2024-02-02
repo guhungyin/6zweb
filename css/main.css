@@ -24,6 +24,7 @@ body{
     background-color: var(--fff);
 }
 hr{background-color: var(--fff);}
+
 header{
     width: 100%;
     max-width: 34rem;
@@ -40,6 +41,12 @@ header .loginBtn{
     color: var(--fff);
     background: var(--greenGradient);
 }
+.banner{
+    position: relative;
+    padding-bottom: 2.5rem;
+}
+.swiper-pagination-bullet{background-color: #979797 !important;}
+.swiper-pagination-bullet-active{background-color: var(--fff) !important;}
 .marquee .marqueeContent{
     width: 100%;
     white-space: nowrap;
