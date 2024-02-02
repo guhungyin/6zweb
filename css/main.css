@@ -10,6 +10,7 @@
     --greenGradient: linear-gradient(180deg,#278e47,#64d23e);
 }
 #app{
+    overflow: hidden;
     position: relative;
     margin: 0 auto;
     background-color: var(--black1);
@@ -242,4 +243,18 @@ header .loginBtn{
     border: none;
     color: var(--fff);
     background: var(--greenGradient);
+}
+
+/* 主選單 */
+.mainMenu{
+    width: 100%;
+    border: none;
+    background-color: #17191b;
+    color: var(--gray);
+}
+.mainMenu .logo{
+    height: 2.5rem;
+}
+.mainMenu .gameLink .download img{
+    height: 2.2rem;
 }

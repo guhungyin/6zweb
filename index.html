@@ -780,10 +780,12 @@
               <span class="bottomMenuName mt-2">Perfil</span>
             </li>
             <li>
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFF" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
-              </svg>
-              <span class="bottomMenuName mt-2">Menu</span>
+              <button class="btn d-flex flex-column justify-content-center align-items-center p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFF" class="bi bi-list" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>
+                <span class="bottomMenuName mt-2">Menu</span>
+              </button>
             </li>
           </ul>
         </section>
@@ -796,6 +798,35 @@
           <div class="addHomeWindowBottom d-flex justify-content-end align-items-center">
             <span type="button" data-bs-dismiss="alert">Cancelar</span>
             <button type="button" class="btn continueBtn ms-4" data-bs-dismiss="alert">Continuar</button>
+          </div>
+        </div>
+        <!-- 主選單 -->
+        <div class="mainMenu offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+              <img src="https://6z.com/img/logo.6a0c45dd.png" class="img-fluid logo" alt="">
+            </h5>
+            <button type="button" class="btn text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#FFFFFF" class="bi bi-x" viewBox="0 0 16 16">
+                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+              </svg>
+            </button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="gameLink p-0">
+              <li class="download text-center">
+                <img src="https://6z.com/img/na_dl.580318eb.png" alt="">
+              </li>
+              <li>
+                <span></span>
+              </li>
+              <li>
+                <span></span>
+              </li>
+              <li>
+                <span></span>
+              </li>
+            </ul>
           </div>
         </div>
     </div>
