@@ -9,15 +9,25 @@
     --primary: #3bc117;
     --greenGradient: linear-gradient(180deg,#278e47,#64d23e);
 }
-body{
-    font-size: 16px;
+#app{
+    position: relative;
+    margin: 0 auto;
     background-color: var(--black1);
+    padding-top: 4rem;
+    min-height: 100%;
+}
+#app.widthLimit{
+    max-width: 34rem;
+}
+body{
+    overflow: hidden;
+    font-size: 16px;
+    background-color: var(--fff);
 }
 hr{background-color: var(--fff);}
-.app{
-    padding-top: 4rem;
-}
 header{
+    width: 100%;
+    max-width: 34rem;
     top: 0;
     background-color: var(--black1);
     z-index: 2;
@@ -181,6 +191,8 @@ header .loginBtn{
     font-size: .8rem;
 }
 .bottomMenu{
+    width: 100%;
+    max-width: 34rem;
     bottom: 0;
     height: 4rem;
     z-index: 1;
@@ -206,6 +218,8 @@ header .loginBtn{
     fill: var(--primary);
 }
 .addHomeWindow{
+    width: 100%;
+    max-width: 34rem;
     background-color: var(--black2);
     color: var(--gray);
     z-index: 3;
