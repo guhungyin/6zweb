@@ -293,3 +293,41 @@ header .loginBtn{
 .mainMenu .helpLink{
     background-color: #24262b;
 }
+
+/* 儲值視窗 */
+.depositWindows{
+    font-size: .8rem;
+    width: 100%;
+    border: none;
+    background-color: #24262b;
+    color: var(--gray);
+}
+.depositWindows .offcanvas-header{
+    background-color: #17181c;
+}
+
+.depositWindows .channelContainer{
+    overflow: auto;
+}
+.depositWindows .channelContainer::-webkit-scrollbar{display: none;}
+.depositWindows .channelContainer .channelItem{
+    color: #8ea7bb;
+    background: #232323;
+    border-radius: .4rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-wrap: nowrap;
+}
+.depositWindows .channelContainer .channelItem.active{
+    box-shadow: inset 0 0 0 1px #8399ac80;
+}
+.depositWindows .channelContainer .channelItem .pixInfo{
+    color: #9e9e9e;
+}
+.depositWindows .channelContainer .channelItem .pixImg{
+    height: 2.2rem;
+    margin-right: 1rem;
+}
