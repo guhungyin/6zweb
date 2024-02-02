@@ -19,21 +19,21 @@ const recentListSwiper = new Swiper(".recentListSwiper", {
     delay: 3000,
     disableOnInteraction: false,
   },
-  breakpoints:{
-    768:{
-      slidesPerView: 4,
-    },
-    992:{
-      slidesPerView: 5,
-      spaceBetween: 20
-    },
-    1200:{
-      slidesPerView: 6
-    },
-    1400:{
-      slidesPerView: 8
-    }
-  }
+  // breakpoints:{
+  //   768:{
+  //     slidesPerView: 4,
+  //   },
+  //   992:{
+  //     slidesPerView: 5,
+  //     spaceBetween: 20
+  //   },
+  //   1200:{
+  //     slidesPerView: 6
+  //   },
+  //   1400:{
+  //     slidesPerView: 8
+  //   }
+  // }
 });
 const quenteGameListSwiper = new Swiper(".quenteGameListSwiper", {
   loop: true,
