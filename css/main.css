@@ -8,6 +8,7 @@
     --gray: #98a7b5;
     --primary: #3bc117;
     --greenGradient: linear-gradient(180deg,#278e47,#64d23e);
+    --redGradient: linear-gradient(180deg,#8b0000,#d23e3e);
 }
 #app{
     overflow: hidden;
@@ -247,14 +248,48 @@ header .loginBtn{
 
 /* 主選單 */
 .mainMenu{
+    font-size: .8rem;
     width: 100%;
     border: none;
     background-color: #17191b;
     color: var(--gray);
+}
+.mainMenu li{
+    display: flex;
+    align-items: center;
+    line-height: 3rem;
 }
 .mainMenu .logo{
     height: 2.5rem;
 }
 .mainMenu .gameLink .download img{
     height: 2.2rem;
+}
+.mainMenu li .icon{
+    margin-right: 1.5rem;
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.mainMenu .pageLink{
+    background-color: #24262b;
+}
+.mainMenu .pageLink .installBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--redGradient);
+    color: var(--fff);
+    border-radius: .2rem;
+    width: 5rem;
+    height: 2rem;
+}
+.mainMenu .socialLink{
+    background-color: #24262b;
+}
+.mainMenu .socialLink img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.mainMenu .helpLink{
+    background-color: #24262b;
 }
