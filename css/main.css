@@ -4,8 +4,11 @@
     --black1: #24262b;
     --black2:#1c1e22;
     --black3:#1a1c20;
+    --black4: #191919;
     --fff: #FFFFFF;
-    --gray: #98a7b5;
+    --gray1: #98a7b5;
+    --gray2: #494949;
+    --blue: #8ea7bb;
     --primary: #3bc117;
     --greenGradient: linear-gradient(180deg,#278e47,#64d23e);
     --redGradient: linear-gradient(180deg,#8b0000,#d23e3e);
@@ -22,11 +25,29 @@
     max-width: 34rem;
 }
 body{
+    font-family: "Helvetica Neue",Helvetica,'Apple SD Gothic Neo','Malgun Gothic',Arial,sans-serif;
     font-size: 16px;
     background-color: var(--fff);
 }
-hr{background-color: var(--fff);}
-
+hr{
+    background-color: var(--fff);
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn:focus{
+    box-shadow: none;
+}
+.form-control{
+    border: none;
+    background-color: var(--black3);
+}
+.form-control:focus{
+    background-color: var(--black4);
+    box-shadow: 0 0 0 1px var(--primary);
+    color: var(--fff);
+}
 header{
     width: 100%;
     max-width: 34rem;
@@ -66,10 +87,17 @@ header .loginBtn{
     100% { transform: translate(-100%, 0); }
 }
 .searchBox{
+    position: relative;
     background-color: #191919;
 }
+.searchBox .searchIcon{
+    position: absolute;
+    left: 3%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
 .searchBox input{
-    color: var(--gray);
+    color: var(--gray1);
     background-color: transparent;
 }
 .title{
@@ -80,7 +108,7 @@ header .loginBtn{
 }
 .recentListSwiper .main .name{
     font-size: .8rem;
-    color: var(--gray);}
+    color: var(--gray1);}
 .recentListSwiper .main .money{
     font-size: .8rem;
     color: var(--primary);}
@@ -95,7 +123,7 @@ header .loginBtn{
 .tabHome li span{
     font-size: .8rem;
     white-space: nowrap;
-    color: var(--gray);
+    color: var(--gray1);
 }
 .gameMain .topContent .total{
     color: var(--fff);
@@ -126,7 +154,7 @@ header .loginBtn{
     height: 2.5rem;
 }
 .footer .share span{
-    color: var(--gray);
+    color: var(--gray1);
     font-size: .6rem;
     text-align: center;
 }
@@ -136,25 +164,25 @@ header .loginBtn{
 }
 .footerBottom a{
     font-size: .8rem;
-    color: var(--gray);
+    color: var(--gray1);
 }
 .footerBottom .license{
     text-align: center;
     font-size: .8rem;
-    color: var(--gray);
+    color: var(--gray1);
 }
 .footerBottom .license a{
     color: var(--fff);
 }
 .footerBottom .warnContent{
     font-size: .8rem;
-    color: var(--gray);
+    color: var(--gray1);
 }
 .footerBottom .support{
     position: relative;
     font-size: .8rem;
 }
-.footerBottom .support .text{color: var(--gray);}
+.footerBottom .support .text{color: var(--gray1);}
 .footerBottom .support .email{color: var(--fff);}
 .footerBottom .favorite{
     line-height: .45rem;
@@ -217,7 +245,7 @@ header .loginBtn{
     align-items: center;
 }
 .bottomMenu ul li .bottomMenuName{
-    color: var(--gray);
+    color: var(--gray1);
     font-size: .7rem;
 }
 .bottomMenu .active svg,
@@ -229,7 +257,7 @@ header .loginBtn{
     width: 100%;
     max-width: 34rem;
     background-color: var(--black2);
-    color: var(--gray);
+    color: var(--gray1);
     z-index: 3;
     bottom: 0;
     margin: 0;
@@ -252,7 +280,7 @@ header .loginBtn{
     width: 100%;
     border: none;
     background-color: #17191b;
-    color: var(--gray);
+    color: var(--gray1);
 }
 .mainMenu li{
     display: flex;
@@ -300,10 +328,13 @@ header .loginBtn{
     width: 100%;
     border: none;
     background-color: #24262b;
-    color: var(--gray);
+    color: var(--gray1);
 }
 .depositWindows .offcanvas-header{
     background-color: #17181c;
+}
+.depositWindows .pixInfo{
+    color: #b4c0cb;
 }
 
 .depositWindows .channelContainer{
@@ -330,4 +361,77 @@ header .loginBtn{
 .depositWindows .channelContainer .channelItem .pixImg{
     height: 2.2rem;
     margin-right: 1rem;
+}
+.depositWindows .depositMain input{
+    text-indent: 13rem;
+    color: var(--blue);
+    padding: .8rem 0;
+}
+.depositWindows .depositMain .tips-close{
+    left: 1rem;
+    top: 50%;
+    color: var(--blue);
+    transform: translate(0,-50%);
+}
+.depositWindows .depositMain .deposit ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.depositWindows .depositMain .deposit li{
+    position: relative;
+    border-radius: .3rem;
+    width: 30%;
+    background-color: var(--gray2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.depositWindows .depositMain .deposit li.active{
+    background: var(--greenGradient);
+}
+.depositWindows .depositMain .deposit li.hot::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2rem;
+    height: 2rem;
+    background: url('../images/icon/hot.png') no-repeat center center / contain;
+}
+.depositWindows .depositMain .deposit .amountContent{
+    display: flex;
+    align-items: center;
+}
+.depositWindows .depositMain .deposit .currencyIcon{
+    height: .9rem;
+}
+.depositWindows .depositMain .deposit span{
+    color: var(--fff);
+    font-size: 1rem;
+}
+.depositWindows .depositMain .deposit .amountTips{
+    font-size: .7rem;
+    color: #9e9e9e;
+}
+.depositWindows .depositMain .deposit li.active .amountTips{
+    color: var(--fff);
+}
+.depositWindows .depositMain .depositBtn{
+    background: var(--greenGradient);
+    color: var(--fff);
+    border: none;
+    opacity: .4;
+    border-radius: 2px;
+    padding: 0.56rem 0;
+}
+.depositWindows .depositMain .depositBtn.active{opacity: 1;}
+.depositWindows .tips li{
+    color: #7e7e7e;
+    text-indent: -1rem;
+}
+.depositWindows .tips li span{
+    font-weight: bold;
+    color: #64d23e;
 }
