@@ -64,6 +64,35 @@ header .loginBtn{
     color: var(--fff);
     background: var(--greenGradient);
 }
+header .right{
+    display: flex;
+    align-items: center;
+}
+header .right .userMoney{
+    display: flex;
+    align-items: center;
+    color: var(--blue);
+}
+header .right .userMoney img{
+    width: 1.5rem;
+}
+header .right .depositBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg,#5519cd,#9449ff);
+    color: var(--fff);
+    font-size: .8rem;
+    height: 2rem;
+    width: 6rem;
+    border-radius: .2rem;
+}
+header .right .userBtn{
+    border: none;
+    background-color: #1f1f1f;
+    width: 2rem;
+    height: 2rem;
+}
 .banner{
     position: relative;
     padding-bottom: 2.5rem;
@@ -301,6 +330,9 @@ header .loginBtn{
 .mainMenu .pageLink{
     background-color: #24262b;
 }
+.mainMenu .pageLink a{
+    color: var(--gray1);
+}
 .mainMenu .pageLink .installBtn{
     display: flex;
     align-items: center;
@@ -321,117 +353,81 @@ header .loginBtn{
 .mainMenu .helpLink{
     background-color: #24262b;
 }
-
-/* 儲值視窗 */
-.depositWindows{
-    font-size: .8rem;
-    width: 100%;
-    border: none;
-    background-color: #24262b;
-    color: var(--gray1);
+/* 個人選單 */
+.profileWindow .offcanvas-header{
+    background-color: var(--black1);
+    height: 4rem;
 }
-.depositWindows .offcanvas-header{
-    background-color: #17181c;
+.profileWindow .offcanvas-header img{
+    height: 2.5rem;
 }
-.depositWindows .pixInfo{
-    color: #b4c0cb;
+.profileWindow .offcanvas-body{
+    overflow: initial;
+    background-color: #1f1f1f;
 }
-
-.depositWindows .channelContainer{
-    overflow: auto;
-}
-.depositWindows .channelContainer::-webkit-scrollbar{display: none;}
-.depositWindows .channelContainer .channelItem{
-    color: #8ea7bb;
-    background: #232323;
-    border-radius: .4rem;
-    width: 12rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-wrap: nowrap;
-}
-.depositWindows .channelContainer .channelItem.active{
-    box-shadow: inset 0 0 0 1px #8399ac80;
-}
-.depositWindows .channelContainer .channelItem .pixInfo{
-    color: #9e9e9e;
-}
-.depositWindows .channelContainer .channelItem .pixImg{
-    height: 2.2rem;
-    margin-right: 1rem;
-}
-.depositWindows .depositMain input{
-    text-indent: 13rem;
+.profileWindow .main .userContent{
     color: var(--blue);
-    padding: .8rem 0;
 }
-.depositWindows .depositMain .tips-close{
-    left: 1rem;
-    top: 50%;
+.profileWindow .main .userContent .userImg img{
+    width: 3rem;
+}
+.profileWindow .main .userContent .changePassword{
     color: var(--blue);
-    transform: translate(0,-50%);
 }
-.depositWindows .depositMain .deposit ul{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+.profileWindow .main .userContent .keyIcon{
+    width: 1rem;
+    padding-bottom: 1rem;
+    background: url('../images/icon/key.png') no-repeat center center / contain;
 }
-.depositWindows .depositMain .deposit li{
-    position: relative;
-    border-radius: .3rem;
-    width: 30%;
-    background-color: var(--gray2);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.profileWindow .main .coin{
+    color: var(--blue);
 }
-.depositWindows .depositMain .deposit li.active{
-    background: var(--greenGradient);
-}
-.depositWindows .depositMain .deposit li.hot::before{
+.profileWindow .main .coin::before{
     content: '';
+    width: 1px;
+    height: 100%;
     position: absolute;
+    left: 50%;
     top: 0;
-    left: 0;
-    width: 2rem;
-    height: 2rem;
-    background: url('../images/icon/hot.png') no-repeat center center / contain;
+    background-color: #4c4c4c;
+    transform: translate(-50%,0);
 }
-.depositWindows .depositMain .deposit .amountContent{
+.profileWindow .main .coin .num{
+    color: var(--fff);
+}
+.profileWindow .main .link a{
+    width: 7rem;
+    height: 2.2rem;
+    color: var(--fff);
+    border-radius: .2rem;
+    font-size: .8rem;
+    background: linear-gradient(180deg,#303030,#494949);
+}
+.profileWindow .main ul{
+    background-color: #2d3035;
+}
+.profileWindow .main ul li{
+    width: 50%;
     display: flex;
     align-items: center;
 }
-.depositWindows .depositMain .deposit .currencyIcon{
-    height: .9rem;
+.profileWindow .main ul li .icon{
+    width: 0.9rem;
+    height: 0.9rem;
+    margin-right: 0.5rem;
 }
-.depositWindows .depositMain .deposit span{
-    color: var(--fff);
-    font-size: 1rem;
-}
-.depositWindows .depositMain .deposit .amountTips{
+.profileWindow .main ul li a{
+    color: var(--blue);
     font-size: .7rem;
-    color: #9e9e9e;
 }
-.depositWindows .depositMain .deposit li.active .amountTips{
-    color: var(--fff);
+.profileWindow .main .logOut{
+    display: flex;
+    align-items: center;
+    color: var(--blue);
+    font-size: .8rem;
 }
-.depositWindows .depositMain .depositBtn{
-    background: var(--greenGradient);
-    color: var(--fff);
-    border: none;
-    opacity: .4;
-    border-radius: 2px;
-    padding: 0.56rem 0;
-}
-.depositWindows .depositMain .depositBtn.active{opacity: 1;}
-.depositWindows .tips li{
-    color: #7e7e7e;
-    text-indent: -1rem;
-}
-.depositWindows .tips li span{
-    font-weight: bold;
-    color: #64d23e;
+.profileWindow .main .logOut img{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
 }
