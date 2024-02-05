@@ -1,15 +1,4 @@
 @import url('./main.css');
-.headerBack{
-    height: 4rem;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #17181c;
-    max-width: 34rem;
-}
-.headerBack .title{
-    font-size: 1.5rem;
-}
 .depositWindows{
     font-size: .8rem;
     width: 100%;
@@ -21,7 +10,6 @@
 .depositWindows .pixInfo{
     color: #b4c0cb;
 }
-
 .depositWindows .channelContainer{
     overflow: auto;
 }
