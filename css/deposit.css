@@ -38,6 +38,9 @@
     height: 2.2rem;
     margin-right: 1rem;
 }
+.depositWindows .channelContainer .channelItem span{
+    white-space: nowrap;
+}
 .depositWindows .depositMain input{
     text-indent: 13rem;
     color: var(--blue);
