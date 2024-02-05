@@ -1,4 +1,7 @@
 @import url('./main.css');
+#app{
+    padding-top: 4rem;
+}
 .depositWindows{
     font-size: .8rem;
     width: 100%;
