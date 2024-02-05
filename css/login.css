@@ -4,6 +4,7 @@
     height: 100vh;
 }
 .phoneInput input{
+    color: var(--fff);
     text-indent: 3rem;
 }
 .phoneInput span{
@@ -12,6 +13,10 @@
     top: 50%;
     transform: translate(0,-50%);
     color: #4d565e;
+}
+.passwordInput input{
+    text-indent: 1rem;
+    color: var(--fff);
 }
 .passwordInput span{
     position: absolute;
