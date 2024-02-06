@@ -1,0 +1,14 @@
+@import url('./main.css');
+.app{
+    background-color: var(--black2);
+    height: 100vh;
+    padding-top: 4rem;
+}
+.main ul{
+    height: 100vh;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    padding-bottom: 11rem;
+}
