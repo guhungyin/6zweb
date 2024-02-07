@@ -1,0 +1,17 @@
+@import url('./main.css');
+#app{
+    padding-top: 4rem;
+}
+.contactWindows{
+    height: 100vh;
+    background-color: #25262b;
+}
+.contactWindows a{
+    display: flex;
+    align-items: center;
+    font-size: .9rem;
+    color: var(--fff);
+}
+.contactWindows .link{
+    color: var(--primary);
+}

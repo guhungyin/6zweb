@@ -1,0 +1,22 @@
+@import url('./main.css');
+#app{
+    padding-top: 4rem;
+}
+.helpWindows{
+    color: #c0c0c0;
+}
+.helpWindows h2{
+    color: var(--primary);
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.helpWindows li{
+    list-style-type:decimal;
+}
+.helpWindows .link{
+    color: #7aaaf1;
+}
+.helpWindows p{
+    font-weight: bold;
+    font-size: .9rem;
+}

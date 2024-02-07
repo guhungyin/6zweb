@@ -107,7 +107,7 @@ a{
 .mainMenu .pageLink{
     background-color: #24262b;
 }
-.mainMenu .pageLink a{
+.mainMenu a{
     color: var(--gray1);
 }
 .mainMenu .pageLink .installBtn{
@@ -115,10 +115,13 @@ a{
     align-items: center;
     justify-content: center;
     background: var(--redGradient);
-    color: var(--fff);
+    font-size: .7rem;
     border-radius: .2rem;
     width: 5rem;
     height: 2rem;
+}
+.mainMenu .pageLink .installBtn a{
+    color: var(--fff);
 }
 .mainMenu .socialLink{
     background-color: #24262b;
@@ -218,5 +221,5 @@ a{
     max-width: 34rem;
 }
 .headerBack .title{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
