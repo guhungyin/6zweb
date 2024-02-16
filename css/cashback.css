@@ -1,7 +1,11 @@
 @import url('./main.css');
 #app{
     padding-top: 4rem;
+    background-color: #ededed ;
 }
 .headerBack{background-color: var(--greenBg);}
 .headerBack .title{color: var(--yellow);}
 .headerBack .moneyBox{color: var(--fff);}
+.vipCard{background-color: var(--yellow);}
+.vipCash{background-color: var(--fff);}
+.vipList{background-color: var(--fff);}
