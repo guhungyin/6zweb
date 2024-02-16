@@ -10,6 +10,8 @@
     --gray2: #494949;
     --blue: #8ea7bb;
     --primary: #3bc117;
+    --greenBg: #009d80;
+    --yellow: #ffe800;
     --greenGradient: linear-gradient(180deg,#278e47,#64d23e);
     --redGradient: linear-gradient(180deg,#8b0000,#d23e3e);
 }

@@ -1,0 +1,7 @@
+@import url('./main.css');
+#app{
+    padding-top: 4rem;
+}
+.headerBack{background-color: var(--greenBg);}
+.headerBack .title{color: var(--yellow);}
+.headerBack .moneyBox{color: var(--fff);}
