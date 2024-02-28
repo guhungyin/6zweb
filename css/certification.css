@@ -1,0 +1,62 @@
+@import url('./main.css');
+.app{
+  padding-top: 4rem;
+}
+.certificationWindows{
+  color: var(--fff);
+}
+.certificationWindows .user{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.certificationWindows .user img{
+  border-radius: 50%;
+}
+.certificationWindows .phone{
+  display: flex;
+  align-items: center;
+  padding: 0 2%;
+  background: #494949;
+  border-radius: 4px;
+  color: #868686;
+}
+.certificationWindows .phone input{
+  border: none;
+  background: none;
+  flex: 1;
+  height: 100%;
+  color: #868686;
+}
+.certificationWindows .phone input:focus{
+  box-shadow: none;
+}
+.certificationWindows .certificationPhoneTip{
+  display: flex;
+  align-items: center;
+  font-size: .9rem;
+}
+.certificationWindows .certificationPhoneTip .tips{
+  background-color: #3b3b3b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  min-width: 2rem;
+  height: 2rem;
+  margin-right: 1rem;
+  color: #bd271d;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.certificationWindows .continueBtn{
+  background: var(--greenGradient);
+  color: var(--fff);
+  border: none;
+  opacity: .4;
+  border-radius: 2px;
+  padding: 0.56rem 0;
+}
+.certificationWindows .continueBtn.active{
+  opacity: 1;
+}
