@@ -1,0 +1,27 @@
+@import url('./main.css');
+#app{
+    padding-top: 4rem;
+    background-color: #ededed;
+}
+.member .headerBack{
+    background-color: #009d80;
+}
+.member .headerBack .title{
+    color: #ffe800;
+}
+.tabs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    height: 2.2rem;
+}
+.tabs::-webkit-scrollbar{display: none;}
+.tabs .tabItem{
+    font-size: .8rem;
+    color: #808080;
+    flex: 1;
+}
+.tabs .tabItem.active{
+    
+}
