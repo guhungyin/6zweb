@@ -1,0 +1,175 @@
+@import url('./main.css');
+#app{
+    padding-top: 4rem;
+    background-color: #ededed;
+}
+.member .headerBack{
+    background-color: #009d80;
+}
+.member .headerBack .title{
+    color: #ffe800;
+}
+.tabs{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: auto;
+    height: 2.2rem;
+}
+.tabs::-webkit-scrollbar{display: none;}
+.tabs .tabItem{
+    font-size: .8rem;
+    color: #808080;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+.tabs .tabItem.active{
+    box-shadow: inset 0 -1px #009d80;
+}
+
+.contentBox .card{
+    border: none;
+    margin-bottom: .8rem;
+}
+.contentBox .card .card-header{
+    background-color: #fff;
+    color: #808080;
+    display: flex;
+    align-items: center;
+}
+.contentBox .card .modalBtn{
+    margin-left: 0.5rem;
+    border-radius: 50%;
+    background-color: #f9a21a;
+    border: none;
+    padding: 0;
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contentBox .card ul{
+    justify-content: space-between;
+    margin-bottom: 0;
+}
+.contentBox .card .num{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.contentBox .card .mainTitle{
+    font-size: .7rem;
+    color: #808080;
+}
+.contentBox .card.committee .vip{
+    background-color: #f5f5f5;
+    border-radius: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contentBox .card.committee .vip .leve{
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-sizing: border-box;
+    padding-bottom: .1rem;
+    background: url('../images/icon/crown.png') no-repeat center center / contain;
+}
+.contentBox .card.committee .vip .leve span{
+    color: var(--fff);
+    font-size: 1.2rem;
+}
+.contentBox .card.committee .vip .acting{
+    text-align: center;
+    color: #009d80;
+    font-size: .6rem;
+}
+.contentBox .card.committee .commission li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+.contentBox .card.committee .wallet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contentBox .card.committee .wallet button{
+    font-size: .7rem;
+}
+.contentBox .card.committee .wallet .tip{
+    font-size: .7rem;
+}
+.contentBox .card.share ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.contentBox .card.share li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contentBox .card.share li span{
+    font-size: .7rem;
+    color: #727272;
+}
+.contentBox .card.share .shareLink .tip{
+    font-size: .9rem;
+}
+.contentBox .card.share .shareLink .copyUrl{
+    background-color: #f9f9f9;
+    border-radius: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contentBox .card.share .shareLink .copyUrl .url{
+    color: #808080;
+    font-size: .9rem;
+}
+.contentBox .card.share .shareLink .copyUrl .copyBtn{
+    color: #40a1de;
+    font-size: .9rem;
+}
+.contentBox .card.service .card-header{
+    font-size: .8rem;
+}
+.contentBox .card.service .text{
+    font-size: .72rem;
+    line-height: 1.8;
+}
+.contentBox .card.commission .hintTitle{
+    text-align: center;
+    font-weight: bold;
+    font-size: .8rem;
+}
+.contentBox .card.commission .imgContent{
+    display: flex;
+    align-items: center;
+}
+.contentBox .card.commission .imgContent span{
+    color: red;
+    font-size: .9rem;
+}
+.contentBox .card.commission .imgContent .rangeBar{
+    width: 7rem;
+}
+.contentBox .card.commission .relationSchema li{
+    font-size: .8rem;
+}
+.contentBox .card.commission .relationSchema li span{
+    color: red;
+}
+
+.modal .modal-title{
+    color: #009d81;
+}
+.modal .notice{color: #808080;}
