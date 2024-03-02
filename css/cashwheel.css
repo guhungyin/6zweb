@@ -1,0 +1,388 @@
+@import url('./main.css');
+#app{
+    padding-top: 4rem;
+}
+.headerBack{
+  color: var(--fff);
+}
+.cashMain{
+  background-color: #232327;
+  border-radius: .8rem;
+}
+.cashMain .haveCash .totalCash{
+  color: #6ddf39;
+  font-size: 2rem;
+}
+.cashMain .haveCash .withdraw{
+  background: #efb423 linear-gradient(90deg,#49a319,#2b8b2f);
+  color: var(--fff);
+  border-radius: 5rem;
+  font-size: .9rem;
+  padding: .2rem .6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cashMain .progressBox{
+  position: relative;
+  padding-top: 1.6rem;
+}
+.cashMain .progressBox span{
+  position: absolute;
+  color: var(--fff);
+  font-size: 1rem;
+  top: 0;
+  right: 0;
+}
+.cashMain .progressBox .progress{
+  height: .5rem;
+}
+.cashMain .progressBox .progress .progress-bar{
+  background-color: #6ddf39;
+}
+
+.cashMain .needCash{
+  color: var(--fff);
+  text-align: center;
+  font-size: 1rem;
+}
+.cashMain .needCash .needCashNum{
+  color: #6ddf39;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.drawMain {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+.drawMain .spinLightBg{
+  background: url('../images/rou/spinBg_2.png') no-repeat center center / 100% 100%;
+  width: 31rem;
+  height: 31rem;
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  animation: spinLightBg 20s linear infinite;
+}
+@keyframes spinLightBg{
+  from {
+    transform: translate(-50%,-50%) rotate(0deg);
+  }
+  to{
+    transform: translate(-50%,-50%) rotate(360deg);
+  }
+}
+.drawMain .light{
+  position: absolute;
+  transform: translate(-50%,0);
+  left: 50%;
+  top: 17.1%;
+  width: 18.7rem;
+  height: 18.7rem;
+  animation: lightAnimation infinite .4s;
+}
+@keyframes lightAnimation{
+  from {
+      background: url('../images/rou/light1.png') no-repeat center center / 100% 100%;
+  }
+  to{
+      background: url('../images/rou/light2.png') no-repeat center center / 100% 100%;
+  }
+}
+.drawMain .pointer{
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 50%;
+  top: 15.6%;
+  width: 5rem;
+  height: 3rem;
+}
+.drawMain .drawImg{
+  position: absolute;
+  transform: translate(-50%,0);
+  left: 50%;
+  top: 43%;
+  width: 5.3rem;
+  height: 5rem;
+}
+.drawMain .drawLen{
+  pointer-events: none;
+  position: absolute;
+  transform: translate(-50%,0);
+  left: 50%;
+  top: 43%;
+  width: 5.3rem;
+  height: 5rem;
+  text-align: center;
+  border-radius: 50%;
+  color: var(--fff);
+  font-weight: bold;
+}
+.drawMain .drawLen .content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.drawMain .drawLen img{
+  width: 1.2rem;
+}
+.drawMain .drawContent{
+  position: absolute;
+  left: 7.6%;
+  top: 21.7%;
+  width: 84.5%;
+  height: 63.4%;
+  border-radius: 50%;
+  overflow: hidden;
+  transition: transform 1s;
+}
+.drawMain .drawContent .spinbox{
+  background: url('../images/rou/spinBg.png') no-repeat center center / contain;
+  transform: rotate(0deg);
+  width: 100%;
+  height: 100%;
+}
+.drawMain .drawContent .spinbox .banknote1{
+  background: url('../images/rou/spin-1.png') no-repeat center center / contain;
+  position: absolute;
+  top: 10%;
+  left: 41.5%;
+  width: 3rem;
+  height: 2.5rem;
+}
+.drawMain .drawContent .spinbox .banknote2{
+  background: url('../images/rou/spin-1.png') no-repeat center center / contain;
+  position: absolute;
+  top: 76%;
+  left: 41.5%;
+  width: 3rem;
+  height: 2.5rem;
+  transform: rotate(180deg);
+}
+.drawMain .drawContent .spinbox .coins{
+  background: url('../images/rou/spin-2.png') no-repeat center center / contain;
+  position: absolute;
+  top: 43%;
+  left: 9.5%;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: rotate(-90deg);
+}
+.drawMain .drawContent .spinbox .fail{
+  background: url('../images/rou/spin-4.png') no-repeat center center / contain;
+  position: absolute;
+  top: 65%;
+  left: 15.5%;
+  width: 3rem;
+  height: 3.5rem;
+  transform: rotate(-135deg);
+}
+.drawMain .drawContent .spinbox .sacar{
+  background: url('../images/rou/spin-5.png') no-repeat center center / contain;
+  position: absolute;
+  top: 62%;
+  left: 63.5%;
+  width: 3rem;
+  transform: rotate(135deg);
+  height: 3.5rem;
+}
+.drawMain .drawContent .spinbox .one{
+  position: absolute;
+  top: 17%;
+  left: 21.5%;
+  transform: rotate(-45deg);
+  font-weight: bold;
+  font-size: 2rem;
+  color: #ffd760;
+}
+.drawMain .drawContent .spinbox .fifty{
+  position: absolute;
+  top: 41%;
+  left: 78.5%;
+  transform: rotate(90deg);
+  font-weight: bold;
+  font-size: 2rem;
+  color: #b90615;
+}
+.drawMain .drawContent .spinbox .oneThousand{
+  position: absolute;
+  top: 18%;
+  left: 64.8%;
+  transform: rotate(45deg);
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #ffd760;
+}
+.drawContent{
+  color: var(--fff);
+}
+.drawContent .text span{
+  color: #8795b1;
+}
+.drawContent .cashButton{
+  background-color: #202124;
+}
+.report .reportTitle{
+  background-color: #202124;
+  color: var(--fff);
+  text-align: center;
+}
+.report .vanTabsContent{
+  overflow: hidden;
+  height: 15rem;
+  position: relative;
+}
+.report .vanTabsContent .winList{
+  animation: winList 8s infinite linear;
+  width: 96%;
+  position: absolute;
+  top: 0;
+}
+@keyframes winList{
+  0%{
+      transform:translateY(0);
+  }
+  100%{
+      transform:translateY(-20rem);
+  }
+}
+.report .vanTabsContent .winList .item{
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.report .vanTabsContent .winList .item .name,
+.report .vanTabsContent .winList .item .tipText{
+  font-size: .85rem;
+  color: #8795b1;}
+.report .vanTabsContent .winList .item .value{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.report .vanTabsContent .winList .item .value .addCash{
+  color: #6ddf39;
+  font-size: .85rem;
+  margin-right: 0.5rem;
+}
+.report .vanTabsContent .winList .item .value .unit{
+  background-color: #6ddf39;
+  border-radius: 50%;
+  color: var(--fff);
+  font-size: .7rem;
+  font-weight: bold;
+  width: 1.3rem;
+  height: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.report .rules{
+  background-color: #202124;
+
+}
+.report .rules h2{
+  color: #8795b1;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.report .rules .tipsContent{
+  color: #7d8397;
+  font-size: 1rem;
+}
+
+.ruleModalLabel .modal-content{
+  background-color: #201f1f;
+  color: var(--fff);
+}
+.ruleModalLabel .modal-content .modal-title{
+  color: #61cf3e;
+  font-weight: bold;
+}
+
+
+.withdrawAlertModal .modal-content{
+  background-color: #202124;
+}
+.withdrawAlertModal .modal-content .modal-title{
+  color: var(--fff);
+}
+.withdrawAlertModal .modal-content .main{
+  background-color: #27292d;
+}
+.withdrawAlertModal .modal-content .main .cash .text{
+  color: #6ddf39;
+  font-size: .9rem;
+  text-align: center;
+}
+.withdrawAlertModal .modal-content .main .cashContent{
+  color: #fd2626;
+  font-size: 2.6rem;
+  text-align: center;
+  font-weight: bold;
+}
+.withdrawAlertModal .modal-content .main .withdrawInfo{
+  padding: 0;
+}
+.withdrawAlertModal .modal-content .main .withdrawInfo li{
+  display: flex;
+  justify-content: space-between;
+  color: var(--fff);
+  font-size: .8rem;
+}
+.withdrawAlertModal .modal-content .main .schedule{
+  background-color: #232327;
+  color: #6ddf39;
+  font-size: .8rem;
+  position: relative;
+}
+.withdrawAlertModal .modal-content .main .schedule::before {
+  content: "";
+  position: absolute;
+  height: 5rem;
+  border-left: 1px dotted #3cc517;
+  transform: translate(0,-50%);
+  top: 50%;
+  left: 1rem;
+}
+.withdrawAlertModal .modal-content .main .schedule li{
+  position: relative;
+}
+.withdrawAlertModal .modal-content .main .schedule li::before{
+  content: "\2713";
+  font-size: .6rem;
+  color: var(--fff);
+  width: .9rem;
+  height: .9rem;
+  position: absolute;
+  left: -1.5rem;
+  top: 50%;
+  transform: translate(0,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6ddf39;
+  border-radius: 50%;
+}
+.withdrawAlertModal .modal-content .main .schedule li.active{
+  color: #4b4f5d;
+}
+.withdrawAlertModal .modal-content .main .schedule li.active::before{
+  content: "";
+  width: .55rem;
+  height: .55rem;
+  left: -1.25rem;
+  top: 52%;
+  background-color: #4b4f5d;
+}
+.withdrawAlertModal .modal-content button{
+  background-color: #6ddf39;
+  color: var(--fff);
+}
