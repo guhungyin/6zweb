@@ -173,3 +173,40 @@
     color: #009d81;
 }
 .modal .notice{color: #808080;}
+
+.committeeModal .modal-content{
+    background-color: #1f2024;
+    color: #98a7b5;
+}
+.committeeModal .modal-content .modal-header{
+    background-color: #17181c;
+}
+.committeeModal .modal-content .modal-title{
+    color: #98a7b5;
+    font-size: .95rem;
+}
+.committeeModal .table{
+    background-color: #0e1319;
+}
+.committeeModal .table th,
+.committeeModal .table td{
+    color: #98a7b5;
+    font-size: .9rem;
+}
+.committeeModal .table tbody td:nth-child(3){
+    color: #db922b;
+}
+
+.committeeModal .wagerBlock{
+    display: flex;
+    font-size: .9rem;
+    background-color: #25262b;
+}
+.committeeModal .wagerBlock .wagerPercent{
+    font-size: 2rem;
+    color: var(--fff);
+}
+.committeeModal .ruleList{
+    font-size: .9rem;
+    list-style-type: disc;
+}
