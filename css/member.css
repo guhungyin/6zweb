@@ -169,7 +169,8 @@
     color: red;
 }
 
-.modal .modal-title{
+.todayModal.modal .modal-title,
+.totalModal.modal .modal-title{
     color: #009d81;
 }
 .modal .notice{color: #808080;}
@@ -209,4 +210,12 @@
 .committeeModal .ruleList{
     font-size: .9rem;
     list-style-type: disc;
+}
+
+.commissionRulesModal .modal-header{
+    background-color: #17181c;
+    color: #98a7b5;
+}
+.commissionRulesModal .modal-body{
+    background-color: #151d28;
 }
