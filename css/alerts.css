@@ -1,0 +1,15 @@
+@import url('./main.css');
+.alertsModal .modal-content{
+    background-color: #1c1c1c;
+    color: var(--fff);
+}
+.alertsModal .modal-content .cancel{
+    color: var(--fff);
+    background: linear-gradient(180deg,#303030,#494949);
+    font-size: .85rem;
+}
+.alertsModal .modal-content .continue{
+    color: var(--fff);
+    background: linear-gradient(180deg,#5519cd,#9449ff);
+    font-size: .85rem;
+}

@@ -216,6 +216,225 @@
     background-color: #17181c;
     color: #98a7b5;
 }
+.commissionRulesModal .modal-header .modal-title{
+    font-size: .8rem;
+}
 .commissionRulesModal .modal-body{
     background-color: #151d28;
+    font-size: .9rem;
+}
+.commissionRulesModal .topBox{
+    background: #151d28;
+    border: 2px solid #1d2532;
+    display: flex;
+    flex-direction: column;
+}
+.commissionRulesModal .topBox .detail{
+    display: flex;
+    align-items: center;
+}
+.commissionRulesModal .topBox .detail .headWrap{
+    position: relative;
+    width: 5.2rem;
+    height: 5.2rem;
+}
+.commissionRulesModal .topBox .detail .headWrap .headBox{
+    border: 1px solid #ecae3d;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.commissionRulesModal .topBox .detail .headWrap .level{
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ecae3d;
+}
+
+.commissionRulesModal .topBox .detail .detailDesc{
+    display: flex;
+    flex-direction: column;
+    color: #5d6578;
+}
+.commissionRulesModal .topBox .detail .detailDesc .descNum span{
+    color: #ecae3d;
+}
+.commissionRulesModal .topBox .fundList{
+    color: var(--fff);
+}
+.commissionRulesModal .topBox .fundList .listItem{
+    text-align: center;
+}
+.commissionRulesModal .topBox .fundList .listItem span{
+    color: #ecae3d;
+}
+
+
+.commissionRulesModal .centerBox{
+    height: 8.5rem;
+}
+.commissionRulesModal .centerBox .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+}
+.commissionRulesModal .centerBox .item.item1,
+.commissionRulesModal .centerBox .item.item3{
+    width: 10rem;
+}
+.commissionRulesModal .centerBox .item.item1{
+    bottom: 14%;
+    transform: rotate(330deg);
+}
+.commissionRulesModal .centerBox .item.item2{
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.commissionRulesModal .centerBox .item.item3{
+    bottom: 14%;
+    transform: rotate(30deg);
+    right: 0;
+}
+.commissionRulesModal .centerBox .item .arrow{
+    background-color: #ecae3d;
+    border-radius: 5rem;
+    width: 7rem;
+    height: .4rem;
+    position: relative;
+}
+.commissionRulesModal .centerBox .item .arrow::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -14%;
+    border-top: .6rem solid rgba(0, 0, 0, 0);
+    border-bottom: .6rem solid rgba(0, 0, 0, 0);
+    border-left: 1.3rem solid #ecae3d;
+    border-radius: .2rem;
+    transform: translate(0,-50%);
+}
+.commissionRulesModal .centerBox .item.item2 .arrow{
+    transform: rotate(-90deg);
+    width: 4.2rem;
+    position: absolute;
+    bottom: 3.5rem;
+}
+.commissionRulesModal .centerBox .item.item3 .arrow{
+    transform: rotate(180deg);
+}
+.commissionRulesModal .centerBox .item .fundDesc{
+    text-align: center;
+    color: var(--fff);
+    font-size: .8rem;
+}
+.commissionRulesModal .centerBox .item .fundDesc span{
+    color: #ecae3d;
+}
+.commissionRulesModal .layer{
+    color: #5d6578;
+}
+.commissionRulesModal .layer .layerItem{
+    position: relative;
+}
+.commissionRulesModal .layer .layerItem::before{
+    content: '';
+    position: absolute;
+    width: 86%;
+    height: 82%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: inset 0 0 0 1px #3c434c;
+    border-radius: 0.5rem;
+}
+.commissionRulesModal .layer .headWrap{
+    position: relative;
+    width: 5.2rem;
+    height: 5.2rem;
+    margin: 0 auto;
+}
+.commissionRulesModal .layer .headWrap .headBox{
+    border: 1px solid #1761e6;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.commissionRulesModal .layer .headWrap .level{
+    background-color: #1761e6;
+    position: absolute;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.commissionRulesModal .layer .descTxt{
+    text-align: center;
+}
+.commissionRulesModal .layer .descTxt span{
+    color: #ecae3d;
+}
+.commissionRulesModal .layer .descFund{
+    color: var(--fff);
+    text-align: center;
+}
+.commissionRulesModal .arrowBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 7rem;
+}
+.commissionRulesModal .arrowBox .arrow{
+    position: relative;
+    background-color: #ecae3d;
+    border-radius: 5rem;
+    height: .4rem;
+}
+.commissionRulesModal .arrowBox .arrow.arrow1{
+    width: 3rem;
+    transform: rotate(-90deg);
+}
+.commissionRulesModal .arrowBox .arrow.arrow2{
+    width: 7rem;
+    transform: rotate(208deg);
+}
+.commissionRulesModal .arrowBox .arrow.arrow3{
+    width: 3rem;
+    transform: rotate(-90deg);
+}
+.commissionRulesModal .arrowBox .arrow::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -14%;
+    border-top: .6rem solid rgba(0, 0, 0, 0);
+    border-bottom: .6rem solid rgba(0, 0, 0, 0);
+    border-left: 1.3rem solid #ecae3d;
+    border-radius: .2rem;
+    transform: translate(0,-50%);
+}
+.commissionRulesModal .fundLayer{
+    color: var(--fff);
+    text-align: center;
+    font-size: .7rem;
+}
+.commissionRulesModal .fundLayer span{
+    color: #ecae3d;
+    font-size: .9rem;
+}
+.commissionRulesModal .ruleDesc{
+    color: var(--fff);
 }
