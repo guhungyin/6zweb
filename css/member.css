@@ -3,6 +3,9 @@
     padding-top: 4rem;
     background-color: #ededed;
 }
+.member{
+    max-width: 34rem;
+}
 .member .headerBack{
     background-color: #009d80;
 }
@@ -27,7 +30,12 @@
 .tabs .tabItem.active{
     box-shadow: inset 0 -1px #009d80;
 }
-
+.contentBox{
+    display: none;
+}
+.contentBox.active{
+    display: block;
+}
 .contentBox .card{
     border: none;
     margin-bottom: .8rem;
@@ -437,4 +445,60 @@
 }
 .commissionRulesModal .ruleDesc{
     color: var(--fff);
+}
+.memberWindows .main{
+    background-color: var(--fff);
+    height: calc(100vh - 12rem);
+    display: none;
+}
+.memberWindows .main.active{
+    display: block;
+}
+.memberWindows table{
+    font-size: .9rem;
+}
+.memberWindows table th{
+    color: #808080;
+    font-weight: bold;
+    font-size: .8rem;
+}
+.memberWindows .noData{
+    text-align: center;
+    font-size: .9rem;
+    color: #969799;
+    border: none;
+    display: none;
+}
+.memberWindows .noData.active{display: table-cell;}
+.fqaContent{
+    background-color: var(--fff);
+    border-radius: .5rem;
+    font-size: .9rem;
+    display: none;
+}
+.fqaContent.active{display: block;}
+.fqaContent h2{
+    color: #383838;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 1px solid #bdbdbd;
+}
+.fqaContent .text{
+    color: grey;
+}
+.fqaContent .linkBtn{
+    color: #009d80;
+}
+.fqaContent .imgContent{
+    display: flex;
+    align-items: center;
+}
+.fqaContent .imgContent span{
+    color: red;
+}
+.fqaContent .relationSchema ul{
+    list-style: decimal ;
+}
+.fqaContent .relationSchema li span{
+    color: red;
 }
