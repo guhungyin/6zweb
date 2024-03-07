@@ -3,13 +3,13 @@
     padding-top: 4rem;
     background-color: #ededed;
 }
-.member{
+.affiliate{
     max-width: 34rem;
 }
-.member .headerBack{
+.affiliate .headerBack{
     background-color: #009d80;
 }
-.member .headerBack .title{
+.affiliate .headerBack .title{
     color: #ffe800;
 }
 .tabs{
@@ -446,30 +446,32 @@
 .commissionRulesModal .ruleDesc{
     color: var(--fff);
 }
-.memberWindows .main{
+.affiliateWindows .main{
     background-color: var(--fff);
     height: calc(100vh - 12rem);
     display: none;
+    border-radius: .3rem;
 }
-.memberWindows .main.active{
+.affiliateWindows .main.active{
     display: block;
 }
-.memberWindows table{
+.affiliateWindows table{
     font-size: .9rem;
 }
-.memberWindows table th{
+.affiliateWindows table th{
     color: #808080;
     font-weight: bold;
     font-size: .8rem;
+    padding: 0;
 }
-.memberWindows .noData{
+.affiliateWindows .noData{
     text-align: center;
     font-size: .9rem;
     color: #969799;
     border: none;
     display: none;
 }
-.memberWindows .noData.active{display: table-cell;}
+.affiliateWindows .noData.active{display: table-cell;}
 .fqaContent{
     background-color: var(--fff);
     border-radius: .5rem;
@@ -501,4 +503,24 @@
 }
 .fqaContent .relationSchema li span{
     color: red;
+}
+.referContent .time{
+    width: 43%;
+    height: 1.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: .8rem;
+}
+.referContent .total{
+    display: flex;
+    justify-content: flex-end;
+}
+.referContent .total .num{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.referContent .total span{
+    color: grey;
+    font-size: .8rem;
 }

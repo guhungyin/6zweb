@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>6Z</title>
-    <link rel="stylesheet" href="css/member.css">
+    <link rel="stylesheet" href="css/affiliate.css">
 </head>
 <body>
-    <div id="app" class="app member">
+    <div id="app" class="app affiliate">
       <div class="headerBack d-flex justify-content-between align-items-center px-2">
         <h2 class="title">Afiliado - Ganhe R$10000 por mês</h2>
         <div class="closeBtn">
@@ -16,7 +16,7 @@
           </svg>
         </div>
       </div>
-      <div class="container-fluid mt-2 memberWindows">
+      <div class="container-fluid mt-2 affiliateWindows">
         <div class="tabs mb-2">
             <div class="tabItem px-1 active">PAINEL</div>
             <div class="tabItem px-1">REFERÊNCIAS</div>
@@ -25,8 +25,8 @@
             <div class="tabItem px-1">FAQ</div>
             <div class="tabItem px-1" data-bs-toggle="modal" data-bs-target="#commissionRulesModal">TUTORIAL</div>
         </div>
-        <!-- 控制板 + active 顯示 -->
-        <div class="contentBox">
+        <!-- PAINEL + active 顯示 -->
+        <div class="contentBox summaryContent">
           <div class="card today">
             <div class="card-header fw-bold">
               Hoje 
@@ -254,17 +254,70 @@
             </div>
           </div>
         </div>
-        <!-- 報告 + active 顯示 -->
-        <div class="main px-2 reportContent">
+        <!-- REFERÊNCIAS + active 顯示 -->
+        <div class="main px-3 referContent">
+          <div class="mb-2 pt-3">
+            <div class="time px-2 border d-flex">
+              <div class="dateTime">2024-03-01</div>
+              <div class="iconBox">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#aaa" class="bi ms-1 bi-calendar4-week" viewBox="0 0 16 16">
+                  <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                  <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-2 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5z"/>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#aaa" class="bi ms-1 bi-x-lg" viewBox="0 0 16 16">
+                  <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <!-- 表單 -->
+          <table class="table mb-3">
+            <thead class="text-center">
+              <tr>
+                <th class="align-middle pb-2">#</th>
+                <th class="align-middle pb-2">Conta</th>
+                <th class="align-middle pb-2">Apostas(R$)</th>
+                <th class="align-middle pb-2">Aposta equipe(R$)</th>
+                <th class="align-middle pb-2">Comissão</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- 無資料 -->
+              <tr>
+                <td class="noData pt-3 active" colspan="5">Opa! Ainda não há dados!</td>
+              </tr>
+              <!-- 有資料 -->
+              <!-- <tr>
+                <td>2024/03/06</td>
+                <td>ccccc</td>
+                <td>99,999</td>
+                <td>ccccc</td>
+                <td>ccccc</td>
+              </tr> -->
+            </tbody>
+          </table>
+          <div class="total">
+            <div class="d-flex flex-column align-items-center">
+              <div class="num">R$ 0</div>
+              <span>Aposta válidas em equipe[0]</span>
+            </div>
+            <div class="d-flex flex-column align-items-center mx-3">
+              <div class="num">R$ 0</div>
+              <span>Comissão</span>
+            </div>
+          </div>
+        </div>
+        <!-- RELATÓRIO + active 顯示 -->
+        <div class="main px-2 reportContent ">
           <!-- 表單 -->
           <table class="table">
             <thead class="text-center">
               <tr>
-                <th class="align-middle">Data</th>
-                <th class="align-middle">Inscrições</th>
-                <th class="align-middle">Aposta válidas</th>
-                <th class="align-middle">Nível de Agente</th>
-                <th class="align-middle">Comissão</th>
+                <th class="align-middle py-2">Data</th>
+                <th class="align-middle py-2">Inscrições</th>
+                <th class="align-middle py-2">Aposta válidas</th>
+                <th class="align-middle py-2">Nível de Agente</th>
+                <th class="align-middle py-2">Comissão</th>
               </tr>
             </thead>
             <tbody>
@@ -283,16 +336,16 @@
             </tbody>
           </table>
         </div>
-        <!-- 付款 + active 顯示 -->
+        <!-- PAGAMENTOS + active 顯示 -->
         <div class="main px-2 PaymentContent">
           <!-- 表單 -->
           <table class="table">
             <thead>
               <tr>
-                <th class="">Data</th>
-                <th class="">Detalhe</th>
-                <th class="">Comissão</th>
-                <th class="">Status</th>
+                <th class="align-middle py-2">Data</th>
+                <th class="align-middle py-2">Detalhe</th>
+                <th class="align-middle py-2">Comissão</th>
+                <th class="align-middle py-2">Status</th>
               </tr>
             </thead>
             <tbody>
@@ -310,7 +363,7 @@
             </tbody>
           </table>
         </div>
-        <!-- 常見問題 + active 顯示 -->
+        <!-- FAQ + active 顯示 -->
         <div class="fqaContent p-2 mb-3">
           <div class="content mb-3">
             <h2 class="mb-2 pb-2">
